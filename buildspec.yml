@@ -7,10 +7,8 @@ phases:
       - npm install
   build:
     commands:
-      - echo Building the React app...
-      - npm run build
+      - echo Building the JavaScript app...
+      # Add any build commands if needed, or remove if not applicable
 artifacts:
   files:
     - '**/*'
-  base-directory: build
-  discard-paths: yes
