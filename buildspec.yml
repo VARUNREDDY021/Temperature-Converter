@@ -3,12 +3,13 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing dependencies...
-      - npm install
+      - echo "No dependencies to install for a standalone JavaScript project."
   build:
     commands:
-      - echo Building the JavaScript app...
-      # Add any build commands if needed, or remove if not applicable
+      - echo "Running custom scripts or preparing files..."
+      # Add any required build or processing commands here, if applicable
 artifacts:
   files:
-    - '**/*'
+    - '**/*.js'   # Include all JavaScript files
+    - '**/*.html' # Include HTML files if needed
+    - '**/*.css'  # Include CSS files if applicable
